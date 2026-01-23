@@ -1,0 +1,25 @@
+# Precedencia de Operadores en Python
+# La precedencia define el orden en que Python evalúa operadores en una expresión
+
+# Ejemplo 1: Multiplicación antes que suma
+resultado1 = 2 + 3 * 4
+print(f"2 + 3 * 4 = {resultado1}")  # Output: 14
+# Explicación: Primero 3 * 4 = 12, luego 2 + 12 = 14
+
+# Ejemplo 2: Paréntesis cambian la precedencia
+resultado2 = (2 + 3) * 4
+print(f"(2 + 3) * 4 = {resultado2}")  # Output: 20
+# Explicación: Primero 2 + 3 = 5, luego 5 * 4 = 20
+
+# Ejemplo 3: Orden de precedencia (de mayor a menor)
+resultado3 = 2 + 3 * 4 / 2 - 1
+print(f"2 + 3 * 4 / 2 - 1 = {resultado3}")  # Output: 7.0
+# Explicación: 3 * 4 = 12, luego 12 / 2 = 6, luego 2 + 6 = 8, finalmente 8 - 1 = 7
+
+# Tabla de precedencia (de mayor a menor):
+# 1. Paréntesis ()
+# 2. Exponenciación **
+# 3. Multiplicación *, División /, División entera //, Módulo %
+# 4. Suma +, Resta -
+# 5. Comparación ==, !=, <, >, <=, >=
+# 6. Operadores lógicos and, or, not
